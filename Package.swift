@@ -24,14 +24,14 @@ let package = Package(
     .library(name: "GoogleAppsScriptTypeDrive", targets: ["GoogleAppsScriptTypeDrive"])
   ],
   dependencies: [
-    .package(path: "../../generated/google-apps-script-type"),
+    .package(path: "../../generated/swift-google-apps-script-type"),
     .package(path: "../../packages/wkt"),
   ],
   targets: [
     .target(
       name: "GoogleAppsScriptTypeDrive",
       dependencies: [
-        .product(name: "GoogleAppsScriptType", package: "google-apps-script-type"),
+        .product(name: "GoogleAppsScriptType", package: "swift-google-apps-script-type"),
         .product(name: "GoogleCloudWKT", package: "wkt"),
       ],
     )
